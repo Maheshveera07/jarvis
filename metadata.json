@@ -1,0 +1,6 @@
+{
+  "name": "JARVIS - Voice-First Android AI Agent",
+  "description": "Production-oriented voice-first multilingual Android AI agent powered by Gemini with tool execution and device control.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

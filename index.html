@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JARVIS - Voice-First Android AI Agent</title>
+    <meta name="description" content="Production-oriented voice-first multilingual Android AI agent powered by Gemini with tool execution and device control." />
+    <meta property="og:title" content="JARVIS - Voice-First Android AI Agent" />
+    <meta property="og:description" content="Production-oriented voice-first multilingual Android AI agent powered by Gemini with tool execution and device control." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@500;700;900&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+      // Gracefully silence iframe WebSocket and benign speech rejections
+      window.addEventListener('unhandledrejection', function(event) {
+        var reasonStr = String(event.reason || '');
+        if (reasonStr.includes('WebSocket') || reasonStr.includes('not-allowed') || reasonStr.includes('Permission denied')) {
+          event.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
